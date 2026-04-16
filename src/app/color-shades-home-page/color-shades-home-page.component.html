@@ -1,0 +1,44 @@
+
+<section class="color-shade-row">
+<div class="container">
+  <div class="row  ">
+    <div class="col-md-9 col-sm-12 mb-4 " routerLink="red-color-shades">
+      <div class="">
+        <h1 class="fw-bolder">Color Shades</h1>
+        <h3>Color shades are lighter and darker variations of a single color. Lighter shades are created by adding white, while darker shades are created by adding black. These variations help improve design and visual appeal.</h3>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-12">
+      <img class="color-shade-img" src="../../assets/color-shades-home.jpg">
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="container my-5">
+  <div class="row">
+
+    <div class="col-12">
+      <h2 class="fw-bold mb-4 text-center">List of Shades</h2>
+    </div>
+
+    <div  class="col-md-6 col-sm-12 mb-4" *ngFor="let list of listOfShades" [routerLink]="list?.routes">
+
+      <div class="shade-card">
+        <div class="img-wrapper">
+          <img [src]="list?.image" alt="{{list?.name}}">
+        </div>
+        <div class="shade-title">
+          {{list?.name}}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<router-outlet></router-outlet>

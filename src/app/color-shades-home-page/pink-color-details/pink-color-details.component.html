@@ -1,0 +1,59 @@
+
+
+<nav class="breadcrumb-custom">
+  <a routerLink="/">Home</a>
+  <span class="fw-bolder" style="font-size: 20PX;">›</span>
+
+  <a routerLink="/color-shades">Color Shades</a>
+  <span class="fw-bolder" style="font-size: 20PX;">›</span>
+
+  <span class="active">Pink Color Shades</span>
+</nav>
+
+
+
+
+
+
+<section class="container">
+<div class="container">
+  <div class="row  ">
+    <div class="col-md-3 col-sm-6 mb-4 " *ngFor="let shade of shadesOfPink">
+
+      <div class="color-card">
+
+        <div
+          class="color-box position-relative d-flex align-items-center justify-content-center"   [ngStyle]="{'background': shade.hex}"
+        >
+          <p *ngIf="copiedColorShade === shade.hex" class= "fw-bolder copied-text bg-white p-2">
+            {{ copiedColorShade }} Copied !
+          </p>
+        </div>
+
+        <div class="color-info ">
+          <div class="row">
+            <div class="col-9 ">
+              <p class="name">{{ shade.name }}</p>
+              <p class="hex">{{ shade.hex }}</p>
+            </div>
+
+            <div class="col-3 cursor-pointer">
+              <svg
+                (click)="copyHex(shade.hex)"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#1f1f1f"
+                style="cursor: pointer;"
+              >
+                <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

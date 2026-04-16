@@ -1,0 +1,43 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    135deg,
+    oklch(15% .04 260),
+    oklch(25% .05 260),
+    oklch(20% .06 280)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect on links */
+ul li a:hover {
+  color: #FF8A00;
+}
+ul li a{
+  color: white;
+}
+
+.navbar-brand{
+    color: white;
+}
+.offcanvas{
+    background-color: #060715;
+        color: white;
+}
+.btn-close{
+  color: white;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
