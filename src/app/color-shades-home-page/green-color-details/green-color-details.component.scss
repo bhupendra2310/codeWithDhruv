@@ -42,8 +42,6 @@
 
 
 
-
-
 .breadcrumb-custom {
   margin-left: 20PX;
   display: flex;
@@ -56,13 +54,13 @@
 
 .breadcrumb-custom a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   font-weight: 500;
   transition: 0.2s;
 }
 
 .breadcrumb-custom a:hover {
-  color: #1766FF;
+  color: var(--color);
 }
 
 .breadcrumb-custom span {
@@ -70,6 +68,6 @@
 }
 
 .breadcrumb-custom .active {
-  color: #333;
+  color: #ffffff;
   font-weight: 600;
 }

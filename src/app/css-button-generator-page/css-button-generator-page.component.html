@@ -1,0 +1,152 @@
+<!--
+<div class="container text-white">
+  <h2 class="fw-bolder mt-3 ">CSS Button Generator</h2>
+
+  <div class="row mt-3 ">
+    <div class="col-md-6">
+      <div class="card">
+        &lt;!&ndash; Controls &ndash;&gt;
+        <div class="controls">
+
+          <label>Button Text</label>
+          <input type="text" [(ngModel)]="text">
+
+          <label>Background Color</label>
+          <input type="color" [(ngModel)]="bgColor">
+
+          <label>Text Color</label>
+          <input type="color" [(ngModel)]="textColor">
+
+          <label>Padding Y</label>
+          <input type="range" min="0" max="50" [(ngModel)]="paddingY">
+
+          <label>Padding X</label>
+          <input type="range" min="0" max="100" [(ngModel)]="paddingX">
+
+          <label>Border Radius</label>
+          <input type="range" min="0" max="50" [(ngModel)]="borderRadius">
+
+          <label>Border </label>
+          <input type="range" min="0" max="50" [(ngModel)]="border">
+
+          <label>Border Color</label>
+          <input type="color"  [(ngModel)]="borderColor">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        &lt;!&ndash; Preview &ndash;&gt;
+        <div class="text-center">
+          <button class="text-center " [ngStyle]="buttonStyles">
+            {{ text }}
+          </button>
+        </div>
+
+        &lt;!&ndash; Output &ndash;&gt;
+        <div class="output">
+          <div class="row">
+            <div class="col-8">
+              <pre>{{ cssCode }}</pre>
+            </div>
+
+            <div class="col-4">
+              <svg (click)="copyCode()"
+                   xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"  fill="#000000"     style="cursor: pointer;"   >
+                <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+</div>
+-->
+<div class="container py-4 text-white">
+  <h2 class="fw-bolder text-center mb-4">CSS Button Generator</h2>
+
+  <div class="row g-4">
+
+    <!-- Left Column -->
+    <div class="col-12 col-md-6 d-flex">
+      <div class="card w-100 h-100 p-3">
+
+        <div class="controls">
+
+          <label>Button Text</label>
+          <input type="text" class="form-control" [(ngModel)]="text">
+
+          <label>Background Color</label>
+          <input type="color" class="form-control form-control-color" [(ngModel)]="bgColor">
+
+          <label>Text Color</label>
+          <input type="color" class="form-control form-control-color" [(ngModel)]="textColor">
+
+          <label>Padding Y</label>
+          <input type="range" class="form-range" min="0" max="50" [(ngModel)]="paddingY">
+
+          <label>Padding X</label>
+          <input type="range" class="form-range" min="0" max="100" [(ngModel)]="paddingX">
+
+          <label>Border Radius</label>
+          <input type="range" class="form-range" min="0" max="50" [(ngModel)]="borderRadius">
+
+          <label>Border</label>
+          <input type="range" class="form-range" min="0" max="50" [(ngModel)]="border">
+
+          <label>Border Color</label>
+          <input type="color" class="form-control form-control-color" [(ngModel)]="borderColor">
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-12 col-md-6 d-flex">
+      <div class="card w-100 h-100 p-3">
+
+        <!-- Preview -->
+        <div class="text-center mb-3">
+          <button [ngStyle]="buttonStyles">
+            {{ text }}
+          </button>
+        </div>
+
+        <!-- Output -->
+        <div class="output">
+          <div class="row align-items-center">
+
+            <div class="col-9">
+              <pre>{{ cssCode }}</pre>
+            </div>
+
+            <div class="col-3 text-end">
+              <svg (click)="copyCode()"
+                   xmlns="http://www.w3.org/2000/svg"
+                   height="24px"
+                   viewBox="0 -960 960 960"
+                   width="24px"
+                   style="cursor: pointer;">
+                <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"/>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

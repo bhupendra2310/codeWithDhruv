@@ -1,0 +1,65 @@
+//.container {
+//  text-align: center;
+//  font-family: Arial, serif;
+//}
+//
+//button {
+//  margin: 20px;
+//  transition: 0.3s;
+//}
+//
+//.controls {
+//  width: 300px;
+//  margin: auto;
+//  text-align: left;
+//}
+//
+//.controls label {
+//  display: block;
+//  margin-top: 10px;
+//}
+//
+//.output {
+//  background: #f4f4f4;
+//  padding: 10px;
+//  margin-top: 20px;
+//  display: inline-block;
+//  text-align: left;
+//}
+
+
+
+
+.container {
+  font-family: Arial, serif;
+}
+
+.card {
+  color: white;
+  border-radius: 12px;
+  border: 1px solid #fbb03b;
+  background: var(--background-bg);
+}
+
+button {
+  margin: 20px;
+  transition: 0.3s;
+}
+
+.controls label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.output {
+  background: #f4f4f4;
+  padding: 10px;
+  color: black;
+  border-radius: 8px;
+
+}
+
+pre {
+  margin: 0;
+  font-size: 13px;
+}

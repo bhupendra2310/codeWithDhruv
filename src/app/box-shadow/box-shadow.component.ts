@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-box-shadow',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./box-shadow.component.scss']
 })
 export class BoxShadowComponent {
+  constructor(private toast: ToastrService) {}
+
 BoxShadowData: any[] = [
   { name: 'Soft Shadow', css: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' },
   { name: 'Light Shadow', css: 'rgba(149, 157, 165, 0.2) 0px 8px 24px' },
@@ -22,6 +25,7 @@ BoxShadowData: any[] = [
 ];
 copyToClipboard(text: string) {
   navigator.clipboard.writeText(text).then(() => {
+    this.toast.success('Box-shadow copied successfully');
 
   }).catch(err => {
     console.error('Failed to copy text: ', err);

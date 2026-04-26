@@ -70,10 +70,7 @@ setInterval(function(){
 `
   copyCode(code: string) {
     navigator.clipboard.writeText(code).then(() => {
-  this.toast.success('Code copied sucessfully !')
-
-  alert('copied')
-
+  this.toast.success('Code copied successfully !')
     }).catch(err => {
         console.error('Failed to copy:', err);
    });

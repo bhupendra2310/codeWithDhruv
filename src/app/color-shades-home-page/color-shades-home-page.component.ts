@@ -12,20 +12,20 @@ export class ColorShadesHomePageComponent {
   listOfShades=[
 {
   "name": "Shades of Red",
- "image": "../../assets/red-image.jpg"
+ "image": "assets/red-image.jpg"
  ,"routes":"/red-color-shades"
 },
 {"name": "Shades of Yellow",
-     "image": "../../assets/shades-of-yellow.png",
+     "image": "assets/shades-of-yellow.png",
       "routes":"/yellow-color-shades"
 },
 
 {"name": "Shades of Pink",
-     "image": "../../assets/shades-of-pink.png",
+     "image": "assets/shades-of-pink.png",
       "routes":"/pink-color-shades"
 },
 {"name": "Shades of Green ",
-     "image": "../../assets/shades-of-green.png",
+     "image": "assets/shades-of-green.png",
       "routes":"/green-color-shades"
 },
 

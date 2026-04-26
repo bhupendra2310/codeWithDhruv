@@ -1,6 +1,139 @@
-.main-container{
-    background-color: #000000;
-    height: 50vh;
-    top: 0;
-    bottom: 0;
+/*
+.footer {
+  margin-top: 50px;
+  padding: 40px 0 20px;
+
+  //background: linear-gradient(
+  //  135deg,
+  //  oklch(15% .04 260),
+  //  oklch(25% .05 260),
+  //  oklch(20% .06 280)
+  //);
+
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+!* brand *!
+.brand {
+  color: #fbb03b;
+  font-weight: bold;
+}
+
+!* text *!
+.small-text {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+!* headings *!
+.footer h5 {
+  color: #fbb03b;
+  margin-bottom: 10px;
+}
+
+!* social icons *!
+.social-icons a {
+  margin-right: 12px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fbb03b;
+  transform: translateY(-3px);
+}
+
+!* bottom line *!
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  color: #94a3b8;
+}
+*/
+
+
+
+
+
+.footer {
+  background-color: #060715;
+  color: #ccc;
+  padding: 60px 20px 20px;
+  border-top: 1px solid #111;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 15px;
+  background-image: linear-gradient(270deg, #fbb03b, #f56a00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f56a00;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #111;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+.social-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.social-favicon{
+  transition: all .5s;
+}
+.social-favicon:hover{
+  rotate: 360deg;
 }

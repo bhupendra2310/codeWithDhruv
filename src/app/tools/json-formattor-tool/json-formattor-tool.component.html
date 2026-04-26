@@ -1,0 +1,60 @@
+
+<!--<textarea class="text-white" [(ngModel)]="rawInput" placeholder="Paste JSON here..."></textarea>-->
+<!--<button (click)="formatJson()">Beautify</button>-->
+<!--<button (click)="minifyJson()">Minify</button>-->
+
+<!--<pre class="text-white" *ngIf="formattedOutput">{{ formattedOutput }}</pre>-->
+
+
+
+
+
+
+<div class="page-wrapper">
+  <div class="container">
+    <h1>Format and Validate JSON Online – Fast JSON Formatter Tool</h1>
+    <p>
+      Format, validate, beautify and minify JSON data instantly with our free online JSON formatter tool.
+      Fix errors, improve readability, and copy clean JSON code for development and debugging.
+    </p>
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="code-card">
+
+          <!-- Header -->
+          <div class="code-header">
+            <p></p>
+            <div class="d-flex gap-3 align-items-center">
+
+              <button class="btn-glow" (click)="formatJson()">Beautify</button>
+              <button class="btn-glow" (click)="minifyJson()">Minify</button>
+
+            </div>
+          </div>
+
+          <!-- JSON String -->
+          <textarea class="" [(ngModel)]="rawInput" placeholder="Paste JSON here..."></textarea>
+
+        </div>
+
+      </div>
+
+      <!-- formatted  code -->
+      <div class="col-md-6" *ngIf="formattedOutput">
+        <div class="code-card">
+          <div class="code-header">
+            <span class="file-name">Formatted Output </span>
+            <div class="d-flex gap-3 align-items-center">
+              <svg (click)="copyCode(formattedOutput)"
+                   xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"  fill="#ffff"     style="cursor: pointer;"   >
+                <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+              </svg>
+            </div>
+          </div>
+          <pre *ngIf="formattedOutput">{{ formattedOutput }}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

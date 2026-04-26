@@ -120,12 +120,7 @@ html, body {
 
 .page-wrapper {
   min-height: 100vh;
-  background: linear-gradient(
-    135deg,
-    oklch(15% .04 260),
-    oklch(25% .05 260),
-    oklch(20% .06 280)
-  );
+  background: var(--background-bg);
   color: white;
 }
 

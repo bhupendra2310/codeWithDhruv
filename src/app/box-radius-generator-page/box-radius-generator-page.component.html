@@ -1,0 +1,56 @@
+
+
+
+
+<div class="container text-white">
+  <h1 class="fw-bolder mt-3 ">Border Radius Generator</h1>
+
+  <div class="row mt-3 ">
+    <div class="col-md-6">
+    <div class="card">
+      <!-- Controls -->
+      <div class="controls">
+        <label>Top Left</label>
+        <input type="range" min="0" max="100" [(ngModel)]="tl">
+
+        <label>Top Right</label>
+        <input type="range" min="0" max="100" [(ngModel)]="tr">
+
+        <label>Bottom Right</label>
+        <input type="range" min="0" max="100" [(ngModel)]="br">
+
+        <label>Bottom Left</label>
+        <input type="range" min="0" max="100" [(ngModel)]="bl">
+      </div>
+    </div>
+  </div>
+    <div class="col-md-6">
+      <div class="card">
+        <!-- Preview -->
+        <div class="output">
+          <div class="preview" [ngStyle]="{'border-radius': borderRadiusValue}">
+          </div>
+          <div >
+
+
+        </div>
+
+      </div>
+        <div style="margin-left: 10px" class=" d-flex justify-content-lg-evenly">
+          <pre class="text-white fw-bolder ml-4">border-radius: {{ borderRadiusValue }};</pre>
+          <svg (click)="copyCode()"
+               xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"  fill="#ffffff"     style="cursor: pointer;"   >
+            <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+          </svg>
+        </div>
+        </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+</div>

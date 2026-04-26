@@ -13,12 +13,18 @@ import { GreenColorDetailsComponent } from './color-shades-home-page/green-color
 import { CalculatorComponent } from './html-css-projects/calculator/calculator.component';
 import { DigitalClockComponent } from './html-css-projects/digital-clock/digital-clock.component';
 import { PageNotFoundComponent } from './static-component/page-not-found/page-not-found.component';
+import {BoxRadiusGeneratorPageComponent} from "./box-radius-generator-page/box-radius-generator-page.component";
+import {CssButtonGeneratorPageComponent} from "./css-button-generator-page/css-button-generator-page.component";
+import {JsonFormattorToolComponent} from "./tools/json-formattor-tool/json-formattor-tool.component";
+import {ToolsHomePageComponent} from "./tools/tools-home-page/tools-home-page.component";
 
 const routes: Routes = [
     {path:'', component:HomeComponentComponent},
   {path:'navbar', component:NavbarComponent},
   {path:'footer',component:FooterComponent},
   {path:'box-shadow',component:BoxShadowComponent},
+  {path:'box-radius-generator', component:BoxRadiusGeneratorPageComponent},
+  {path:'css-button-generator', component:CssButtonGeneratorPageComponent},
   {path:'color-picker', component:ColorPickerComponent},
   {path:'color-shades', component:ColorShadesHomePageComponent },
   {path:'red-color-shades', component:RedColorDetailsComponent},
@@ -27,6 +33,8 @@ const routes: Routes = [
   {path:'green-color-shades', component:GreenColorDetailsComponent},
   {path:'calculator', component:CalculatorComponent},
   {path:'digital-clock', component:DigitalClockComponent},
+  {path:'tools/json-formator', component:JsonFormattorToolComponent},
+  {path:'tools', component: ToolsHomePageComponent},
   {path:'**', component:PageNotFoundComponent}
 ];
 
@@ -34,7 +42,8 @@ const routes: Routes = [
 @NgModule({
 
   imports: [  RouterModule.forRoot(routes,{
-    scrollPositionRestoration: 'enabled'
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling:'enabled',
   })],
   exports: [RouterModule]
 

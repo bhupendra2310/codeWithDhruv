@@ -1,3 +1,102 @@
+*{
+
+}
+
+
+/* Full screen layout */
+.wrapper {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.67);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* Glass card */
+.glass-card {
+  position: relative;
+  width: 320px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+/* ✨ Glass shine effect */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Controls panel */
+.controls {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 260px;
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.controls h3 {
+  margin-top: 0;
+}
+
+.controls label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.controls input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 10px;
+  font-family: monospace;
+  padding: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+}
+
+
+/*@keyframes gradientMove {*/
+/*  0% { background-position: 0% 50%; }*/
+/*  50% { background-position: 100% 50%; }*/
+/*  100% { background-position: 0% 50%; }*/
+/*}*/
+
+
+
 
 
 html, body {
@@ -131,4 +230,33 @@ pre {
 
   color: #fff;
   overflow: auto;
+}
+
+
+.btn-glow {
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    oklch(15% .04 260),
+    oklch(25% .05 260),
+    oklch(20% .06 280)
+  );
+  color: white;
+
+  box-shadow: 0 5px 14px #f56a0075;
+  border: 1px solid #fbb03b;
+  transition: 0.3s;
+}
+
+
+.btn-glow:hover {
+  transform: scale(1.05);
+  color: #fbb03b;
+}
+
+textarea{
+  height: 250px;
 }

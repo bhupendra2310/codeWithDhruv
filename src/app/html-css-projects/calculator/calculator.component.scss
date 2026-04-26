@@ -1,21 +1,17 @@
 html, body {
   height: 100%;
   margin: 0;
+  top: 1000px;
 }
 
 .page-wrapper {
   min-height: 100vh;
-  background: linear-gradient(
-    135deg,
-    oklch(15% .04 260),
-    oklch(25% .05 260),
-    oklch(20% .06 280)
-  );
+  background: var(--background-bg);
   color: white;
 }
 
 .container{
-  background: linear-gradient(135deg, oklch(15% .04 260), oklch(25% .05 260), oklch(20% .06 280));
+  background: var(--background-bg);
   color: white;
 }
 
@@ -58,25 +54,13 @@ html, body {
 
 /* Code block */
 pre {
-  background-color: #f1f1f1;
   padding: 10px;
-  margin: 0;
+
   // border-radius: 0 0 8px 8px;
   overflow: auto;
-  background: linear-gradient(
-    135deg,
-    oklch(15% .04 260),
-    oklch(25% .05 260),
-    oklch(20% .06 280)
-  );
+  background: var(--background-bg);
   color: white;
   margin-bottom: 20px;
-
-    // border-top-left-radius: 20px;
-    // border-top-right-radius: 20px;
-    //   border-top: 1px solid #fbb03b;
-    //    border-left: 1px solid #fbb03b;
-    //     border-right: 1px solid #fbb03b;
 
 }
 
@@ -102,7 +86,7 @@ pre {
 .code-card {
   border: 1px solid #fbb03b;
   border-radius: 12px;
-  overflow: hidden; /* 🔥 header + code ko ek bana deta hai */
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
@@ -134,14 +118,7 @@ pre {
 .code-block {
   margin: 0;
   padding: 12px;
-
-  background: linear-gradient(
-    135deg,
-    oklch(15% .04 260),
-    oklch(25% .05 260),
-    oklch(20% .06 280)
-  );
-
+  background: var(--background-bg);
   color: #fff;
   overflow: auto;
 }

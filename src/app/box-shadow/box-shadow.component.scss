@@ -1,4 +1,55 @@
+.breadcrumb-custom {
+  margin-left: 20PX;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.breadcrumb-custom a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.breadcrumb-custom a:hover {
+  color: var(--color);
+}
+
+.breadcrumb-custom span {
+  color: #aaa;
+}
+
+.breadcrumb-custom .active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+.white-card {
+  background: #ffffff;
+  color: #000; /* text black karna padega */
+
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+
+  margin-top: 20px;
+}
+
+
 .card{
   height:12rem;
   width: 11rem;
+}
+.col-12{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }

@@ -11,22 +11,17 @@ html, body {
   width: 100%;
   height: 100vh;
 
-  background: linear-gradient(
-    135deg,
-    oklch(15% .04 260),
-    oklch(25% .05 260),
-    oklch(20% .06 280)
-  );
+  background: var(--background-bg);
 
   color: white;
 }
 
 .place-items-center {
   display: grid;
-  place-items: center; /* 🔥 better than align-content */
+  place-items: center;
 }
 
-/* button fix (padding bahut zyada tha) */
+
 .btn {
   z-index: 1;
   border: 1px solid #fbb03b;

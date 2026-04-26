@@ -1,34 +1,52 @@
-<div class="container mt-5">
-  <div class="row g-4">
-    <div class="col-12 col-sm-12 col-md-3" *ngFor="let item of BoxShadowData let i = index">
-      <div class="card  rounded-3 mb-5 mt-5" [ngStyle]="{'box-shadow': item.css}">
-        <div class="card-body">
-          <div class="text-center">
-            <p class="mb-0 text-dark font-bold">{{i+1 }}</p>
+<!--Breadcrumb-->
+<nav class="breadcrumb-custom">
+  <a routerLink="/">Home</a>
+  <span class="fw-bolder" style="font-size: 20PX;">›</span>
+
+  <span class="active ">CSS Box-Shadow</span>
+</nav>
+
+
+
+
+<div class="white-card">
+  <div class="container ">
+    <div class="row g-4">
+      <h1 class="text-center" data-aos="fade-up">Stunning CSS Box Shadows for Your UI</h1>
+      <p class="text-center"  data-aos="fade-up">Create, preview and copy modern box shadows instantly.
+        Explore a collection of modern CSS box-shadow examples and generate custom shadow effects for your UI.
+        Copy ready-to-use CSS code instantly to enhance buttons, cards, and web components with stylish shadows.
+      </p>
+      <div class="col-12 col-sm-12 col-md-3"  data-aos="fade-up" *ngFor="let item of BoxShadowData let i = index">
+        <div class="card  rounded-3 mb-5 mt-5" [ngStyle]="{'box-shadow': item.css}">
+          <div class="card-body">
+            <div class="text-center">
+              <p class="mb-0 text-dark font-bold">{{i+1 }}</p>
+            </div>
+            <div class="text-center">
+
+              <button
+                class="btn   mt-2"
+                type="button"
+                data-bs-toggle="collapse"
+                [attr.data-bs-target]="'#collapse' + i"
+                [attr.aria-controls]="'collapse' + i"
+                (click)="copyToClipboard(item.css)">
+                Copy
+
+              </button>
+
+              <div class="collapse mt-2" [id]="'collapse' + i">
+                <div>
+                  <code #codeRef>{{ item.css }}</code>
+                  <!-- <button (click)="copyToClipboard(item.css)" class="btn btn-sm btn-outline-secondary ms-2">
+                    Copy
+                  </button> -->
+                </div>
+              </div>
+
+            </div>
           </div>
-          <div class="text-center">
-
-        <button
-            class="btn   mt-2"
-            type="button"
-            data-bs-toggle="collapse"
-            [attr.data-bs-target]="'#collapse' + i"
-            [attr.aria-controls]="'collapse' + i"
-            (click)="copyToClipboard(item.css)">
-           View
-
-          </button>
-
-<div class="collapse mt-2" [id]="'collapse' + i">
-  <div>
-    <code #codeRef>{{ item.css }}</code>
-    <!-- <button (click)="copyToClipboard(item.css)" class="btn btn-sm btn-outline-secondary ms-2">
-      Copy
-    </button> -->
-  </div>
-</div>
-
-      </div>
         </div>
       </div>
     </div>

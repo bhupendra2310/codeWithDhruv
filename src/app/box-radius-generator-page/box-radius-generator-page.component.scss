@@ -1,0 +1,39 @@
+.container {
+
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.preview {
+  color: white;
+  width: 200px;
+  height: 200px;
+  background: #fbb03b;
+  margin: 20px auto;
+  transition: 0.3s;
+}
+
+.controls {
+  width: 300px;
+  margin: auto;
+  color: white;
+  text-align: left;
+}
+
+.controls label {
+  display: block;
+  margin-top: 10px;
+}
+
+.output {
+  margin-top: 20px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.card{
+  height: 400px;
+  border: 1px solid #fbb03b;
+  border-radius: 12px;
+  background: var(--background-bg);
+}
