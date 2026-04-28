@@ -19,7 +19,8 @@ constructor( private toast:ToastrService) {
       const parsed = JSON.parse(this.rawInput);
       this.formattedOutput = JSON.stringify(parsed, null, 4); // 4 spaces for indentation
     } catch (e:any) {
-      this.formattedOutput = `Invalid JSON: ${e.message}`;
+      // this.formattedOutput = `Invalid JSON: ${e.message}`;
+      this.toast.error(e.message);
     }
   }
 
@@ -28,7 +29,8 @@ constructor( private toast:ToastrService) {
       const parsed = JSON.parse(this.rawInput);
       this.formattedOutput = JSON.stringify(parsed); // Minified output
     } catch (error:any) {
-      this.formattedOutput = 'Invalid JSON: ' + error.message;
+      // this.formattedOutput = 'Invalid JSON: ' + error.message;
+      this.toast.error(error.message);
     }
   }
 

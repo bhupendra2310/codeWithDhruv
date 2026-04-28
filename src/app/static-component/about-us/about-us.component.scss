@@ -1,0 +1,52 @@
+*{
+  color: white;
+
+}
+
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding: 5px;
+}
+
+.main-box-blue{
+  border: 2px solid #90cdf4;
+  padding: 20px;
+  border-radius: 0.79rem;
+
+}
+
+
+.icon{
+  display: flex;
+  gap: 10px;
+}
+
+.icon span{
+  font-weight: 1000;
+}
+
+
+
+.main-box-orange{
+  border: 2px solid #f4d490;
+  padding: 20px;
+  border-radius: 0.79rem;
+
+}
+
+.main-box-pink{
+  border: 2px solid #f490e9;
+  padding: 20px;
+  border-radius: 0.79rem;
+
+}
+
+.box{
+  height: 22vh;
+
+  cursor: pointer;
+}

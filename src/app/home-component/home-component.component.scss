@@ -23,6 +23,7 @@
 .hero p {
   margin: 15px 0;
   color: #cbd5f5;
+  font-size: 1.4rem
 }
 
 
@@ -171,4 +172,17 @@
 
 .btn-submit:hover {
   opacity: 0.85;
+}
+
+
+@media (max-width: 575px) {
+  .hero h1 {
+    font-size: 29px;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }

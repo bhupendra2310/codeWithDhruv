@@ -1,0 +1,68 @@
+<!--<div class="main">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <h3 class="text-center fw-bolder">Best Ready To Use Project </h3>-->
+<!--      <div class="col-12 col-md-10">-->
+<!--        <div class="main-project-card">-->
+<!--          <div class="head">-->
+<!--            <div class="row align-items-center"> &lt;!&ndash; Centers items vertically &ndash;&gt;-->
+<!--              <div class="col-md-4 col-4 col-sm-4 mb-3 mb-sm-0">-->
+<!--                <img src="assets/test.png" class="img-fluid rounded" alt="Project Thumbnail">-->
+<!--              </div>-->
+<!--              <div class="col-8 col-sm-8">-->
+<!--                <h3>How To Make a Calculator Using HTML and CSS Only</h3>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel sem non nisl elementum interdum.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+
+
+
+<div class="main py-5">
+  <div class="container">
+
+    <h2 class="text-center fw-bold text-white mb-4">
+      Best Ready To Use Projects
+    </h2>
+
+    <div class="row g-4">
+
+      <!-- Project Card -->
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let project of projects">
+        <div class="main-project-card h-100">
+
+          <!-- Image -->
+          <img [src]="project.image" class="project-img" alt="Project Thumbnail">
+
+          <!-- Content -->
+          <div class="card-body">
+            <h5 class="project-title">{{ project.title }}</h5>
+            <p class="project-desc">{{ project.description }}</p>
+
+            <!-- Buttons -->
+            <div class="d-flex gap-2 mt-3">
+<!--              <a [href]="project.demo" target="_blank" class="btn btn-info btn-sm w-100">-->
+<!--                Live Demo-->
+<!--              </a>-->
+              <a [routerLink]="project.route"  class="btn btn-outline-light btn-sm w-100">
+                Code
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

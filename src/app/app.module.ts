@@ -24,6 +24,11 @@ import { CssButtonGeneratorPageComponent } from './css-button-generator-page/css
 import { BackToTopComponent } from './static-component/back-to-top/back-to-top.component';
 import { JsonFormattorToolComponent } from './tools/json-formattor-tool/json-formattor-tool.component';
 import { ToolsHomePageComponent } from './tools/tools-home-page/tools-home-page.component';
+import { AboutUsComponent } from './static-component/about-us/about-us.component';
+import { ProjectsHomePageComponent } from './projects/projects-home-page/projects-home-page.component';
+import { PrivacyPoliciesComponent } from './static-component/privacy-policies/privacy-policies.component';
+import { TermsConditionsComponent } from './static-component/terms-conditions/terms-conditions.component';
+import { ContentLayoutComponent } from './static-component/content-layout/content-layout.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,12 @@ import { ToolsHomePageComponent } from './tools/tools-home-page/tools-home-page.
     CssButtonGeneratorPageComponent,
     BackToTopComponent,
     JsonFormattorToolComponent,
-    ToolsHomePageComponent
+    ToolsHomePageComponent,
+    AboutUsComponent,
+    ProjectsHomePageComponent,
+    PrivacyPoliciesComponent,
+    TermsConditionsComponent,
+    ContentLayoutComponent
   ],
     imports: [
         BrowserModule,

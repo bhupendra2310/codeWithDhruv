@@ -10,7 +10,7 @@
         Explore a free collection of web development tools and generators to speed up your workflow.
         Create CSS effects, shadows, gradients and copy ready-to-use code with live preview instantly.
       </p>
-      <div class="col-md-4">
+      <div class="col-md-4" *ngFor="let tool of tools">
         <!-- tool-card -->
         <div class="tool-card">
 
@@ -23,15 +23,14 @@
           <div class="tool-content">
 
             <h3 class="tool-title">
-              Box Shadow CSS Generator Online
+              {{tool?.title }}
             </h3>
 
             <p class="tool-desc">
-              Create beautiful box shadow effects and copy ready-to-use CSS for cards,
-              buttons and modern UI components.
+              {{tool?.subtitle}}
             </p>
 
-            <a routerLink="/box-shadow" class="tool-btn">
+            <a [routerLink]="tool?.route" class="tool-btn">
               Try Tool
               <span>→</span>
             </a>
