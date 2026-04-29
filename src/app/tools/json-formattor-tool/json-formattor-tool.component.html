@@ -26,7 +26,7 @@
             <span class="file-name">Paste your JSON String Here </span>
             <div class="d-flex gap-3 align-items-center">
 
-              <button class="btn-glow" (click)="formatJson()">Beautify</button>
+              <button class="btn-glow " (click)="formatJson()">Beautify</button>
               <button class="btn-glow" (click)="minifyJson()">Minify</button>
 
             </div>
@@ -56,5 +56,72 @@
       </div>
     </div>
   </div>
+
+
+<!--  content -->
+  <div class="container main pb-5">
+    <h1>What Is JSON</h1>
+    <p>JavaScript Object Notation (JSON) is an open data interchange format that is both human and machine-readable. <br>
+      JSON is often used when data is sent from a server to a web page
+
+    </p>
+
+    <h1>JSON Example</h1>
+    <p>This example defines an student object: an array of 4 students records:</p>
+    <pre>{{ data | json }}</pre>
+
+
+    <h1>Steps For JSON Formatter</h1>
+    <p>1 <strong>Paste:</strong> Paste your JSON data into the editor box</p>
+    <p>2 <strong>Beautify:</strong> Click the Beautify button to add proper indentation.</p>
+    <p>3 <strong>Minify:</strong> Use this option to remove all whitespace to compress data into a single line.</p>
+    <p>4 <strong>Copy:</strong> Use the copy icon to copy the formatted JSON code.</p>
+
+
+    <section class="FAQ-section mt-5 main ">
+      <div class="container">
+        <div class="row">
+          <div class="button d-flex justify-content-center">
+            <button class=" FAQ-button ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                   class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                <path
+                  d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+              </svg>
+              FAQ
+            </button>
+          </div>
+
+          <div class="">
+            <h2 class="text-center FAQ-head pt-5" >Frequently Asked Questions</h2>
+            <p style="font-size: 18px" class="FAQ-title text-center pb-2">Find quick answers to the common questions</p>
+
+            <div class="faq-container">
+              <div
+                class="faq-card"
+                *ngFor="let item of faqs; let i = index"
+                [class.active]="activeIndex === i"
+              >
+                <div class="faq-header" (click)="toggle(i)">
+                  <h3>{{ item.question }}</h3>
+                  <span class="icon">
+        {{ activeIndex === i ? '−' : '+' }}
+      </span>
+                </div>
+
+                <div class=" faq-content" [class.open]="activeIndex===i" >
+                  <p>{{ item.answer }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
 
 </div>

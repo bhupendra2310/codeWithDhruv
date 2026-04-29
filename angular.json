@@ -28,7 +28,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects"
+              "src/_redirects",
+              "src/google4823b59e7b8425d4.html"
             ],
              "styles": [
                "node_modules/aos/dist/aos.css",

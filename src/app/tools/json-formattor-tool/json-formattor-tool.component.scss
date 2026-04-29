@@ -76,17 +76,17 @@ textarea {
   font-family: monospace;
   padding: 8px;
 }
-
-button {
-  margin-top: 10px;
-  padding: 8px;
-  width: 100%;
-  cursor: pointer;
-  border: none;
-  background: #fff;
-  color: #000;
-  border-radius: 6px;
-}
+//
+//button {
+//  margin-top: 10px;
+//  padding: 8px;
+//  width: 100%;
+//  cursor: pointer;
+//  border: none;
+//  background: #fff;
+//  color: #000;
+//  border-radius: 6px;
+//}
 
 
 /*@keyframes gradientMove {*/
@@ -259,4 +259,126 @@ pre {
 
 textarea{
   height: 250px;
+}
+
+
+
+.FAQ-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 9px 18px;
+  border-radius: 50px;
+  border: 1px solid #ff9752;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.FAQ-head {
+  font-size: 39px;
+}
+
+.FAQ-card {
+  border-radius: 13px ;
+
+  background-color: #170a2e;
+  color: #ffffff;
+  padding: 10px 51px;
+  border: 1px solid #8d5cff;
+  cursor: pointer;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.FAQ-card-head{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  margin-top: 5px;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.faq-content.open {
+  max-height: 200px; /* adjust if needed */
+  opacity: 1;
+}
+
+svg {
+  transition: transform 0.3s ease;
+}
+
+.open-icon {
+  transform: rotate(180deg);
+}
+
+
+
+
+.faq-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.faq-card {
+
+  transition: all 0.3s ease;
+
+  border-radius: 13px ;
+
+  background-color: #170a2e;
+  color: #ffffff;
+  padding: 10px 51px;
+  border: 1px solid #8d5cff;
+  cursor: pointer;
+  max-width: 600px;
+  width: 100%;
+  margin: 40px auto 0;
+}
+
+.faq-card.active {
+  box-shadow: 0 0 20px rgba(150, 100, 255, 0.4);
+}
+
+.faq-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px #00000080;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.faq-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.faq-body {
+  margin-top: 12px;
+  color: #ccc;
+  line-height: 1.5;
+
+}
+@media (max-width: 575px) {
+  .FAQ-head {
+    font-size: 23px;
+  }
 }
