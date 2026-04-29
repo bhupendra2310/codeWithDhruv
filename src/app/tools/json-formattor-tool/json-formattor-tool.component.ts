@@ -52,7 +52,6 @@ constructor( private toast:ToastrService) {
     ]
   };
 
-
   activeIndex: number | null = null;
 
   faqs = [
