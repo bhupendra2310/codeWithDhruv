@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/tools</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/color-picker</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/color-shades-generator</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/box-shadow-generator</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/border-radius-generator</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/css-button-generator</loc>
+  </url>
+
+  <url>
+    <loc>https://codewithdhruv.netlify.app/html-css-projects</loc>
+  </url>
+
+</urlset>
