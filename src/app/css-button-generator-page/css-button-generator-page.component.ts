@@ -28,7 +28,7 @@ export class CssButtonGeneratorPageComponent {
       'padding': `${this.paddingY}px ${this.paddingX}px`,
       'border-radius': `${this.borderRadius}px`,
       'cursor': 'pointer',
-      'border': `${this.border}px solid ${this.borderColor}`,
+      'border': `${this.border}px solid ${this.borderColor}`
     };
   }
 
@@ -40,7 +40,7 @@ button {
   color: ${this.textColor};
   padding: ${this.paddingY}px ${this.paddingX}px;
   border-radius: ${this.borderRadius}px;
-  'border': ${this.border}px solid ${this.borderColor},;
+  border: ${this.border}px solid ${this.borderColor};
   cursor: pointer;
 }
     `;

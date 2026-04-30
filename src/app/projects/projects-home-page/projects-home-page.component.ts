@@ -16,13 +16,13 @@ export class ProjectsHomePageComponent {
       demo: '#',
       route: '/calculator'
     },
-    {
-      title: 'Weather App',
-      description: 'Live weather app using API integration.',
-      image: 'assets/test.png',
-      demo: '#',
-      route: 'weather-app'
-    },
+    // {
+    //   title: 'Weather App',
+    //   description: 'Live weather app using API integration.',
+    //   image: 'assets/test.png',
+    //   demo: '#',
+    //   route: 'weather-app'
+    // },
     {
       title: 'Digital Clock',
       description: 'Real-time clock using JavaScript.',

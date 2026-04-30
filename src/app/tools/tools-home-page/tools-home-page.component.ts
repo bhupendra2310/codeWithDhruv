@@ -39,7 +39,21 @@ export class ToolsHomePageComponent {
       subtitle:'Format, validate and beautify JSON data instantly with this free tool.',
       route:'/tools/json-formator',
       image:'assets/tools/json-preview.png'
-    }
+    },
+    {
+      name:'Color Shades',
+      title:'Color Shades',
+      subtitle:'Get unique and different different type of color shades.',
+      route:'/color-shades',
+      image:'assets/tools/json-preview.png'
+    },
+    {
+      name:'Color Picker',
+      title:'Color Picker',
+      subtitle:'Generate & get unique color HEX code and RGB code to use in your UI.',
+      route:'/color-picker',
+      image:'assets/tools/json-preview.png'
+    },
 
   ];
 }
