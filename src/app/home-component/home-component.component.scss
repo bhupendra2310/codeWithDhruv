@@ -88,26 +88,6 @@
 
 
 
-.why {
-  padding: 50px;
-  background: linear-gradient(
-    135deg,
-    oklch(15% .04 260),
-    oklch(25% .05 260),
-    oklch(20% .06 280)
-  );
-  color: white;
-  text-align: center;
-}
-
-.why-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-
 
 
 .contact-form {
@@ -173,6 +153,49 @@
 .btn-submit:hover {
   opacity: 0.85;
 }
+
+
+// why choose section
+
+.main {
+  background: #020617;
+  min-height: 100vh;
+}
+
+/* Card Styling */
+.custom-card {
+  background: #020617;
+  border: 1px solid #222;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.custom-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #f56a00;
+  box-shadow: 0 10px 30px rgba(245, 105, 0, 0.2);
+}
+
+/* Icon styling */
+.icon svg {
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover .icon svg {
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* Text */
+h1 {
+  letter-spacing: 1px;
+}
+
+.why-choose p {
+  font-size: 0.95rem;
+}
+
 
 
 @media (max-width: 575px) {
